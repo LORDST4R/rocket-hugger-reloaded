@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle2 } from "lucide-react";
+import deliverooLogo from "@/assets/deliveroo-logo.png";
 
 const OFFER_URL = "https://trksy.org/aff_c?offer_id=4054&aff_id=28933";
 
@@ -42,19 +43,19 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background max-w-lg mx-auto">
-      {/* Hero Image */}
-      <div className="relative w-full h-52 overflow-hidden">
+      {/* Hero Image with logo and white fade */}
+      <div className="relative w-full h-56 overflow-hidden">
         <img
           src="/images/food-bg.jpg"
           alt="Food delivery"
           className="w-full h-full object-cover"
         />
+        {/* White fade at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
+        {/* Logo top-left */}
         <div className="absolute top-4 left-4 flex items-center gap-2">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-primary-foreground">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="hsl(172, 100%, 38%)" />
-            <path d="M8 12l2-4h4l2 4-2 4h-4l-2-4z" fill="white" />
-          </svg>
-          <span className="text-white font-bold text-lg tracking-wide">deliveroo</span>
+          <img src={deliverooLogo} alt="Deliveroo" className="w-7 h-7" />
+          <span className="text-white font-bold text-lg tracking-wide drop-shadow-lg">deliveroo</span>
         </div>
       </div>
 
@@ -128,10 +129,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border">
         <div className="flex items-center justify-center gap-2 mb-1">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="hsl(172, 100%, 38%)" />
-            <path d="M8 12l2-4h4l2 4-2 4h-4l-2-4z" fill="white" />
-          </svg>
+          <img src={deliverooLogo} alt="Deliveroo" className="w-5 h-5" />
           <span className="font-bold text-muted-foreground text-sm">deliveroo</span>
         </div>
         <p className="text-muted-foreground text-xs">Powered by Deliveroo</p>
