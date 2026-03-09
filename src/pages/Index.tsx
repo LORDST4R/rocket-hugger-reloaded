@@ -61,7 +61,7 @@ const Index = () => {
 
       {/* Main Content */}
       <div className="px-6 py-8 text-center">
-        <h1 className="text-2xl font-extrabold text-foreground leading-tight mb-2">
+        <h1 className="text-2xl font-extrabold text-foreground leading-tight mb-2 animate-fade-in-up animation-delay-200">
           Claim Your Deliveroo Student Reward
         </h1>
         <p className="text-muted-foreground text-sm mb-5">United Kingdom Only</p>
