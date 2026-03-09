@@ -44,7 +44,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background max-w-lg mx-auto">
       {/* Hero Image with logo and white fade */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-56 overflow-hidden animate-fade-in-up">
         <img
           src="/images/food-bg.jpg"
           alt="Food delivery"
@@ -61,13 +61,13 @@ const Index = () => {
 
       {/* Main Content */}
       <div className="px-6 py-8 text-center">
-        <h1 className="text-2xl font-extrabold text-foreground leading-tight mb-2">
+        <h1 className="text-2xl font-extrabold text-foreground leading-tight mb-2 animate-fade-in-up animation-delay-200">
           Claim Your Deliveroo Student Reward
         </h1>
         <p className="text-muted-foreground text-sm mb-5">United Kingdom Only</p>
 
         {/* Social Proof */}
-        <div className="flex items-center justify-center gap-2 mb-6">
+        <div className="flex items-center justify-center gap-2 mb-6 animate-fade-in-up animation-delay-400">
           <CheckCircle2 className="w-5 h-5 text-primary" />
           <span className="font-bold text-foreground text-sm">
             {approvedCount.toLocaleString()}+ UK Students Approved This Month
@@ -84,7 +84,7 @@ const Index = () => {
         <p className="text-muted-foreground text-xs mb-6">Takes ~5–10 minutes</p>
 
         {/* Steps */}
-        <div className="space-y-3 mb-8">
+        <div className="space-y-3 mb-8 animate-fade-in-up animation-delay-600">
           {steps.map((step) => (
             <div
               key={step.num}
