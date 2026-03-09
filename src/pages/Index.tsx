@@ -67,7 +67,7 @@ const Index = () => {
         <p className="text-muted-foreground text-sm mb-5">United Kingdom Only</p>
 
         {/* Social Proof */}
-        <div className="flex items-center justify-center gap-2 mb-6">
+        <div className="flex items-center justify-center gap-2 mb-6 animate-fade-in-up animation-delay-400">
           <CheckCircle2 className="w-5 h-5 text-primary" />
           <span className="font-bold text-foreground text-sm">
             {approvedCount.toLocaleString()}+ UK Students Approved This Month
