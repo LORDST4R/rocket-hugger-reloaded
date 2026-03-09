@@ -84,7 +84,7 @@ const Index = () => {
         <p className="text-muted-foreground text-xs mb-6">Takes ~5–10 minutes</p>
 
         {/* Steps */}
-        <div className="space-y-3 mb-8">
+        <div className="space-y-3 mb-8 animate-fade-in-up animation-delay-600">
           {steps.map((step) => (
             <div
               key={step.num}
