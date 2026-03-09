@@ -44,7 +44,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background max-w-lg mx-auto">
       {/* Hero Image with logo and white fade */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-56 overflow-hidden animate-fade-in-up">
         <img
           src="/images/food-bg.jpg"
           alt="Food delivery"
