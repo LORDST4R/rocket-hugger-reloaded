@@ -6,9 +6,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle2 } from "lucide-react";
-import deliverooLogo from "@/assets/deliveroo-logo.png";
+import justeatLogo from "@/assets/justeat-logo.png";
 
-const OFFER_URL = "https://trksy.org/aff_c?offer_id=4054&aff_id=28933";
+const OFFER_URL = "https://giftclick.org/aff_c?offer_id=4169&aff_id=28933";
 
 const steps = [
   { num: 1, text: "Go Through A Quick Questionnaire" },
@@ -54,15 +54,15 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
         {/* Logo top-left */}
         <div className="absolute top-4 left-4 flex items-center gap-2">
-          <img src={deliverooLogo} alt="Deliveroo" className="w-7 h-7" />
-          <span className="text-white font-bold text-lg tracking-wide drop-shadow-lg">deliveroo</span>
+          <img src={justeatLogo} alt="Just Eat" className="w-8 h-8" />
+          <span className="text-white font-bold text-lg tracking-wide drop-shadow-lg">Just Eat</span>
         </div>
       </div>
 
       {/* Main Content */}
       <div className="px-6 py-8 text-center">
         <h1 className="text-2xl font-extrabold text-foreground leading-tight mb-2 animate-fade-in-up animation-delay-200">
-          Claim Your Deliveroo Student Reward
+          Claim Your Just Eat Student Reward
         </h1>
         <p className="text-muted-foreground text-sm mb-5">United Kingdom Only</p>
 
@@ -129,10 +129,10 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border">
         <div className="flex items-center justify-center gap-2 mb-1">
-          <img src={deliverooLogo} alt="Deliveroo" className="w-5 h-5" />
-          <span className="font-bold text-muted-foreground text-sm">deliveroo</span>
+          <img src={justeatLogo} alt="Just Eat" className="w-6 h-6" />
+          <span className="font-bold text-muted-foreground text-sm">Just Eat</span>
         </div>
-        <p className="text-muted-foreground text-xs">Powered by Deliveroo</p>
+        <p className="text-muted-foreground text-xs">Powered by Just Eat</p>
       </footer>
     </div>
   );
